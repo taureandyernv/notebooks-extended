@@ -43,7 +43,7 @@ Let's get started with a couple videos!
 
   Shows you have you can use RAPIDS and Dask to easily ingest and model a large dataset (1 year's worth of NYCTaxi data) and then create a model around the question "when do you get the best tips".  This same workload can be done on any GPU.
 
-###Learning Notebooks###
+### Learning Notebooks
 
 | Notebook Title         | Description |
 |------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -93,7 +93,7 @@ Let's look at a few video walkthroughs of XGBoost, as it may be an unfarmilar co
 
 - [3- Intro to UMAP](https://github.com/rapidsai/notebooks-contrib/blob/master/conference_notebooks/SCIPY_2019/cuml/03-UMAP.ipynb)
 
-### Conclusion to Sections 1 and 2###
+### Conclusion to Sections 1 and 2
 Here ends the basics of cuDF, cuML, Dask, and XGBoost.  These are libraries that everyone who uses RAPIDS will go to every day.  Our next sections will cover libraries that are more niche in usage, but are powerful to accomplish your analytics.  
 
 ## **3. Graphs on RAPIDS: Intro to cuGraph**
