@@ -54,11 +54,13 @@ Let's get started with a couple videos!
 | [06_Introduction_to_Supervised_Learning](https://github.com/rapidsai/notebooks-contrib/blob/master/getting_started_notebooks/intro_tutorials/06_Introduction_to_Supervised_Learning.ipynb)   | This notebook shows how to do GPU accelerated Supervised Learning in RAPIDS.                                                                                                                                      |
 
 
-
 ### Extra credit and Exercises
-- [1- Review of cuDF](https://github.com/rapidsai/notebooks-contrib/blob/master/conference_notebooks/SCIPY_2019/cudf/01-Intro_to_cuDF.ipynb)
-
-- [2- Creating User Defined Fuctions (UDFs) in cuDF](https://github.com/rapidsai/notebooks-contrib/blob/master/conference_notebooks/SCIPY_2019/cudf/02-Intro_to_cuDF_UDFs.ipynb)
+- [10 minute review of cuDF](https://rapidsai.github.io/projects/cudf/en/0.11.0/10min-cudf-cupy.html)
+- [Extra Credit - 10 minute guide to cuDF and cuPY](https://rapidsai.github.io/projects/cudf/en/0.11.0/10min-cudf-cupy.html)
+- [Extra Credit - Multi-GPU with Dask-cuDF](https://rapidsai.github.io/projects/cudf/en/0.11.0/dask-cudf.html)
+- [Review and Exercises 1- Review of cuDF](https://github.com/rapidsai/notebooks-contrib/blob/master/conference_notebooks/SCIPY_2019/cudf/01-Intro_to_cuDF.ipynb)
+- [Review and Exercises 2- Creating User Defined Fuctions (UDFs) in cuDF](https://github.com/rapidsai/notebooks-contrib/blob/master/conference_notebooks/SCIPY_2019/cudf/02-Intro_to_cuDF_UDFs.ipynb)
+- [Review and Exercises 3- Linear Regression](https://github.com/rapidsai/notebooks-contrib/blob/master/conference_notebooks/SCIPY_2019/cuml/01-Introduction-LinearRegression-Hyperparam.ipynb)
 
 
 ## **2. Scaling out and Starting with Algorithms: XGBoost and cuML Dimensionality Reductions and Clustering**
@@ -87,12 +89,13 @@ Let's look at a few video walkthroughs of XGBoost, as it may be an unfarmilar co
 
 
 ### Extra credit and Exercises
-- [1- Intro to Linear Regression](https://github.com/rapidsai/notebooks-contrib/blob/master/conference_notebooks/SCIPY_2019/cuml/01-Introduction-LinearRegression-Hyperparam.ipynb)
+- [10 Review of Dask XGBoost](https://rapidsai.github.io/projects/cudf/en/0.11.0/dask-xgb-10min.html)
 
 - [2- Logistic Regression](https://github.com/rapidsai/notebooks-contrib/blob/master/conference_notebooks/SCIPY_2019/cuml/02-LogisticRegression.ipynb)
 
 - [3- Intro to UMAP](https://github.com/rapidsai/notebooks-contrib/blob/master/conference_notebooks/SCIPY_2019/cuml/03-UMAP.ipynb)
 
+- 
 ### Conclusion to Sections 1 and 2
 Here ends the basics of cuDF, cuML, Dask, and XGBoost.  These are libraries that everyone who uses RAPIDS will go to every day.  Our next sections will cover libraries that are more niche in usage, but are powerful to accomplish your analytics.  
 
