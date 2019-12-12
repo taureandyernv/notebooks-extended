@@ -2,13 +2,14 @@
 
 # Testing your notebook in Notebooks CI:
 1. Restart your Docker container to a new pull state:
-	
-  `docker ps` to see all running docker images
-  
-  `docker restart <selected docker image>`
-1. In terminal, navigate to the folder containing your target notebook
-1. Fill in `notebook name` and run this command- `bash /rapids/utils/nbtest.sh <notebook name>`
-1. If it returns `EXIT CODE 0`, you're good to PR!  
+- `docker ps` to see all running docker images
+- `docker restart < selected docker image >`
+ 
+2. In terminal, navigate to the folder containing your target notebook
+
+3. Fill in `notebook name` and run this command- `bash /rapids/utils/nbtest.sh <notebook name>`
+
+4. If it returns `EXIT CODE 0`, you're good to PR!  
   If it returns `EXIT CODE 1`, please fix the issues found.
 
 Please note:
