@@ -2,13 +2,13 @@
 ## Introductions
 
 In this Crash Course, we're going to cover the basic skills you need to accelerate your data analytics and ML pipeline.  We'll cover how to use the libraries cuDF, cuML, cuGraph, and cuXFilter, as well as exosystem partners, like XGBoost, Dask, and BlazingSQL, to accelerate how you: 
-- ingest data
-- perform your prepare your data with [ETL (Extract, Transform, and Load)](https://www.webopedia.com/TERM/E/ETL.html)
-- model, inference, and predict
-- visualize your data throughout the process.  
+- Ingest data
+- Perform your prepare your data with [ETL (Extract, Transform, and Load)](https://www.webopedia.com/TERM/E/ETL.html)
+- Run modelling, inferencing, and predicting algorithms on the data in a GPU dataframe
+- Visualize your data throughout the process.  
 
 Each section should take you less than 2 hours to complete.  By the time you're done, you should be able to either:
-1. take an existing workflow in a data science or ML pipeline and use a RAPIDS to accelerate it with your GPU
+1. Take an existing workflow in a data science or ML pipeline and use a RAPIDS to accelerate it with your GPU
 1. Create your own workflows from scratch
 
 This Crash Course was written with the expectation that you know Python, Jupyter Lab.  It is helpful, but not necessary, to have atleast some understanding of Pandas, Scikit Learn, NetworkX, and Datashader. 
@@ -17,7 +17,7 @@ This Crash Course was written with the expectation that you know Python, Jupyter
 - OS of Ubuntu 16.04 or 18.04 or CentOS7 with gcc 5.4 & 7.3
 - an NVIDIA GPU of Pascal Architeture or better (basically 10xx series or newer)
 
-RAPIDS does work on Consumer GPUs
+RAPIDS works on Consumer GPUs (like GeForce, Titan), not just Prosumer/Enterprise Class GPUS (Quadro, Tesla, DGX)
 ## Titan RTX
 - [NVIDIA Spot on Titan RTX and RAPIDS](https://www.youtube.com/watch?v=tsWPeZTLpkU)
 - [t-SNE 600x Speed up on Titan RTX](https://www.youtube.com/watch?v=_4OehmMYr44)
@@ -31,7 +31,7 @@ Let's get started!
 ### Introduction
 cuDF is the fundamental library in RAPIDS.  cuDF lets you create and manipulate your dataframes, which all other libraries use to model, infer, regress, reduce, and predict outcomes. It's API is designed to be similar to Pandas.  
 
-Sometimes the dataframe is larger than your available GPU memory.  Dask is used to help our algorithms scale up and using distributed computing.  Using Dask for your distributed computing calculations, whether you have a single GPU, multiple GPUs, or multiple nodes with signle or multiple GPUs, you can process your dataframe no matter the size, just like a regular CPU cluster.  Unfortunately, Dask won't work on Colab, so you need to provision your own machine.
+Sometimes the dataframe is larger than your available GPU memory.  Dask is used to help our algorithms scale up and using distributed computing.  Whether you have a single GPU, multiple GPUs, or multiple nodes with single or multiple GPUs, you can use Dask for your distributed computing calculations andorchstrate the processing of your GPU dataframe, no matter the size, just like a regular CPU cluster.  Unfortunately, Dask won't work on Colab, so you need to provision your own machine, like and [AWS dask Cluster]() (*link to blog coming soon*).
 
 Let's get started with a couple videos!
 
@@ -66,7 +66,7 @@ Let's get started with a couple videos!
 ### Introduction
 Congrats learning the basics of cuDF and Dask.  Now let's take a look at cuML
 
-cuML lets you run many common algorithms and methods on your dataframe so that you can model, infer, regress, reduce, and predict outcomes. It's API is similar to Scikit Learn.  [Among the ever growing suite of algorithms, you can perform several GPU accelerated algortihms for each of these methods:]()*will link to slide deck showing cuML algorithms*
+cuML lets you run many common algorithms and methods on your dataframe so that you can model, infer, regress, reduce, and predict outcomes on the data in your cuDF data frames. It's API is similar to Scikit Learn.  [Among the ever growing suite of algorithms, you can perform several GPU accelerated algortihms for each of these methods:]()(*will link to slide deck showing cuML algorithms*)
 
 - Classification / Regression
 - Inference
@@ -107,6 +107,30 @@ Let's look at a few video walkthroughs of XGBoost, as it may be an unfarmilar co
 
 - [3- Intro to UMAP](https://github.com/rapidsai/notebooks-contrib/blob/master/conference_notebooks/SCIPY_2019/cuml/03-UMAP.ipynb)
 
+### Some Examples
+| Folder    | Notebook Title         | Description                                                                                                                                                                                                                   |
+|-----------|------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| cuML      | [Coordinate Descent](https://github.com/rapidsai/notebooks/blob/master/cuml/coordinate_descent_demo.ipynb)     | This notebook includes code examples of lasso and elastic net models. These models are placed together so a comparison between the two can also be made in addition to their sklearn equivalent.                                                                                                                                                                |
+| cuML      | [DBSCAN Demo](https://github.com/rapidsai/notebooks/blob/master/cuml/dbscan_demo.ipynb)            | This notebook showcases density-based spatial clustering of applications with noise (dbscan) algorithm using the `fit` and `predict` functions                                                                              |
+| cuML      | [Forest Inference](https://github.com/rapidsai/notebooks/blob/master/cuml/forest_inference_demo.ipynb)   | This notebook shows how to use the forest inference library to load saved models and perform prediction using them. In addition, it also shows how to perform training and prediction using xgboost and lightgbm models.|
+| cuML      | [HoltWinters Demo](https://github.com/rapidsai/notebooks/blob/master/cuml/holtwinters_demo.ipynb)  | This notebook includes code example for the holt-winters algorithm and it showcases the `fit` and `forecast` functions.                 |
+| cuML      | [K-Means Demo](https://github.com/rapidsai/notebooks/blob/master/cuml/kmeans_demo.ipynb) | This notebook includes code example for the k-means algorithm and it showcases the `fit` and `predict` functions.                                                                                                                                             |
+| cuML      | [K-Means MNMG Demo](https://github.com/rapidsai/notebooks/blob/master/cuml/kmeans_demo-mnmg.ipynb) | This notebook includes code example for the k-means multi-node multi-GPU algorithm and it showcases the `fit` and `predict` functions.                                                                                                                                             |
+| cuML      | [Linear Regression Demo](https://github.com/rapidsai/notebooks/blob/master/cuml/linear_regression_demo.ipynb) | This notebook includes code example for linear regression algorithm and it showcases the `fit` and `predict` functions.                                                                                                                                             |
+| cuML      | [Metrics Demo]https://github.com/rapidsai/notebooks/blob/master/cuml/metrics_demo.ipynb) | This notebook includes code examples showcasing the different metrics provided in cuML. The results are compared with their scikit learn counterparts.                                                                                                                                             |
+| cuML      | [Mini Batch SGD Demo](https://github.com/rapidsai/notebooks/blob/master/cuml/mini_batch_sgd_demo.ipynb) | This notebook includes code example for mbsgd classifier and regressor algorithms and it showcases their `fit` and `predict` functions.                                                                                                                                             |
+| cuML      | [Nearest Neighbors_demo](https://github.com/rapidsai/notebooks/blob/master/cuml/nearest_neighbors_demo.ipynb)               | This notebook showcases k-nearest neighbors (knn) algorithm using the `fit` and `kneighbors` functions                                                                                                                          |
+| cuML      | [PCA Demo](https://github.com/rapidsai/notebooks/blob/master/cuml/pca_demo.ipynb)               | This notebook showcases principal component analysis (PCA) algorithm where the model can be used for prediction (using `fit_transform`) as well as converting the transformed data into the original dataset (using `inverse_transform`).                                                                                                                |
+| cuML      | [Random Forest Classification and Pickling](https://github.com/rapidsai/notebooks/blob/master/cuml/random_forest_demo.ipynb)   | Demonstrates how to fit cuML and scikit-learn Random Forest Classification models. Then we save the cuML model for future use with Python's pickling mechanism and demonstrate how to re-load it for prediction.|
+| cuML      | [Random Forest Multi-node / Multi-GPU](https://github.com/rapidsai/notebooks/blob/master/cuml/random_forest_mnmg_demo.ipynb)   | Demonstrates how to fit Random Forest models using multiple GPUs via Dask. |
+| cuML      | [Ridge Regression Demo](https://github.com/rapidsai/notebooks/blob/master/cuml/ridge_regression_demo.ipynb)  | This notebook includes code examples of ridge regression and it showcases the `fit` and `predict` functions.                                                                                                                                          |
+| cuML      | [SGD_Demo](https://github.com/rapidsai/notebooks/blob/master/cuml/sgd_demo.ipynb)               | The stochastic gradient descent algorithm is demonstrated in the notebook using `fit` and `predict` functions                                                                        |
+| cuML      | [SVM_Demo](https://github.com/rapidsai/notebooks/blob/master/cuml/svm_demo.ipynb)               | Binary Support Vector Machine classification is demonstrated in this notebook using `fit` and `predict` functions. |
+| cuML      | [TSNE_Demo](https://github.com/rapidsai/notebooks/blob/master/cuml/tsne_demo.ipynb)               | In this notebook, T-Distributed Stochastic Neighborhood Embedding is demonstrated applying the Barnes Hut method on the Fashion MNIST dataset using our `fit_transform` function                                                                      |
+| cuML      | [TSVD_Demo](https://github.com/rapidsai/notebooks/blob/master/cuml/tsvd_demo.ipynb	)              | This notebook showcases truncated singular value decomposition (tsvd) algorithm which like PCA performs both prediction and transformation of the converted dataset into the original data using `fit_transform` and `inverse_transform` functions respectively                                                                                                     |
+| cuML      | [UMAP_Demo](https://github.com/rapidsai/notebooks/blob/master/cuml/umap_demo.ipynb)              | The uniform manifold approximation & projection algorithm is compared with the original author's equivalent non-GPU Python implementation using `fit` and `transform` functions                       |
+| cuML      | [UMAP_Demo_Graphed](https://github.com/rapidsai/notebooks/blob/master/cuml/umap_demo_graphed.ipynb)      | Demonstration of cuML uniform manifold approximation & projection algorithm's supervised approach against mortgage dataset and comparison of results against the original author's equivalent non-GPU \Python implementation. |
+| cuML      | [UMAP_Demo_Supervised](https://github.com/rapidsai/notebooks/blob/master/cuml/umap_supervised_demo.ipynb)   | Demostration of UMAP supervised training.  Uses a set of labels to perform supervised dimensionality reduction. UMAP can also be trained on datasets with incomplete labels, by using a label of "-1" for unlabeled samples. |
 
 ### Conclusion to Sections 1 and 2
 Here ends the basics of cuDF, cuML, Dask, and XGBoost.  These are libraries that everyone who uses RAPIDS will go to every day.  Our next sections will cover libraries that are more niche in usage, but are powerful to accomplish your analytics.  
