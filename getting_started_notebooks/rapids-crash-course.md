@@ -31,7 +31,7 @@ Let's get started!
 ### Introduction
 cuDF is the fundamental library in RAPIDS.  cuDF lets you create and manipulate your dataframes, which all other libraries use to model, infer, regress, reduce, and predict outcomes. It's API is designed to be similar to Pandas.  
 
-Sometimes the dataframe is larger than your available GPU memory.  Dask is used to help our algorithms scale up and using distributed computing.  Whether you have a single GPU, multiple GPUs, or multiple nodes with single or multiple GPUs, you can use Dask for your distributed computing calculations andorchstrate the processing of your GPU dataframe, no matter the size, just like a regular CPU cluster.  Unfortunately, Dask won't work on Colab, so you need to provision your own machine, like and [AWS dask Cluster]() (*link to blog coming soon*).
+Sometimes the dataframe is larger than your available GPU memory.  Dask is used to help our algorithms scale up and using distributed computing.  Whether you have a single GPU, multiple GPUs, or multiple nodes with single or multiple GPUs, you can use Dask for your distributed computing calculations andorchstrate the processing of your GPU dataframe, no matter the size, just like a regular CPU cluster.  Unfortunately, Dask won't work on Colab, so you need to provision your own machine, like an [AWS dask Cluster]() (*link to blog coming soon*).
 
 Let's get started with a couple videos!
 
@@ -44,6 +44,8 @@ Let's get started with a couple videos!
   Shows you have you can use RAPIDS and Dask to easily ingest and model a large dataset (1 year's worth of NYCTaxi data) and then create a model around the question "when do you get the best tips".  This same workload can be done on any GPU.
 
 ### Learning Notebooks
+
+If you don't have a GPU enabled system, you can try these notebooks in our [Section 1 Colab](https://colab.research.google.com/drive/10ZMf5DA9GxkVlJ-z39YW9vCoTTky_tDr)
 
 | Notebook Title         | Description |
 |------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -85,7 +87,7 @@ Let's look at a few video walkthroughs of XGBoost, as it may be an unfarmilar co
 
 - [Video - Introduction to Dask XGBoost](https://www.youtube.com/watch?v=q8HfEZythjM).
  
- Walks through the [08_Introduction_to_Dask_XGBoost](getting_started_notebooks/intro_tutorials/08_Introduction_to_Dask_XGBoost.ipynb) notebook and hows how to work with Dask XGBoost in RAPIDS.  This can be run on a Single GPU as well and is usefull when your dataset is larger than the memory size of your GPU.
+ Walks through the [08_Introduction_to_Dask_XGBoost](getting_started_notebooks/intro_tutorials/08_Introduction_to_Dask_XGBoost.ipynb) notebook and hows how to work with Dask XGBoost in RAPIDS.  This can be run on a single GPU as well and is useful when your dataset is larger than the memory size of your GPU.
 
 ### Learning Notebooks
 
