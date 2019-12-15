@@ -27,9 +27,9 @@ RAPIDS does work on Consumer GPUs
 
 Let's get started!
 
-## **1. The Basics of RAPIDS: cuDF, Dask, and cuMl Supervised Learning**
+## **1. The Basics of RAPIDS: cuDF and Dask**
 ### Introduction
-cuDF and cuML are the two fundamental libraries in RAPIDS.  cuDF lets you create and manipulate your dataframes.  It's API is designed to be similar to Pandas.  cuML lets you run many common algorithms and methods on your dataframe so that you can model, infer, regress, reduce, and predict outcomes.  It's API is similar to Scikit Learn.  
+cuDF is the fundamental library in RAPIDS.  cuDF lets you create and manipulate your dataframes, which all other libraries use to model, infer, regress, reduce, and predict outcomes. It's API is designed to be similar to Pandas.  
 
 Sometimes the dataframe is larger than your available GPU memory.  Dask is used to help our algorithms scale up and using distributed computing.  Using Dask for your distributed computing calculations, whether you have a single GPU, multiple GPUs, or multiple nodes with signle or multiple GPUs, you can process your dataframe no matter the size, just like a regular CPU cluster.  Unfortunately, Dask won't work on Colab, so you need to provision your own machine.
 
@@ -51,7 +51,7 @@ Let's get started with a couple videos!
 | [02_Introduction_to_cuDF](https://github.com/rapidsai/notebooks-contrib/blob/master/getting_started_notebooks/intro_tutorials/02_Introduction_to_cuDF.ipynb)  | This notebook shows how to work with cuDF DataFrames in RAPIDS.                                                                                                                                      |
 | [03_Introduction_to_Dask](https://github.com/rapidsai/notebooks-contrib/blob/master/getting_started_notebooks/intro_tutorials/03_Introduction_to_Dask.ipynb)   | This notebook shows how to work with Dask using basic Python primitives like integers and strings.                                                                                                                                      |
 | [04_Introduction_to_Dask_using_cuDF_DataFrames](https://github.com/rapidsai/notebooks-contrib/blob/master/getting_started_notebooks/intro_tutorials/04_Introduction_to_Dask_using_cuDF_DataFrames.ipynb)   | This notebook shows how to work with cuDF DataFrames using Dask.                                                                                                                                      |
-| [06_Introduction_to_Supervised_Learning](https://github.com/rapidsai/notebooks-contrib/blob/master/getting_started_notebooks/intro_tutorials/06_Introduction_to_Supervised_Learning.ipynb)   | This notebook shows how to do GPU accelerated Supervised Learning in RAPIDS.                                                                                                                                      |
+
 
 
 ### Extra credit and Exercises
@@ -60,12 +60,21 @@ Let's get started with a couple videos!
 - [Extra Credit - Multi-GPU with Dask-cuDF](https://rapidsai.github.io/projects/cudf/en/0.11.0/dask-cudf.html)
 - [Review and Exercises 1- Review of cuDF](https://github.com/rapidsai/notebooks-contrib/blob/master/conference_notebooks/SCIPY_2019/cudf/01-Intro_to_cuDF.ipynb)
 - [Review and Exercises 2- Creating User Defined Fuctions (UDFs) in cuDF](https://github.com/rapidsai/notebooks-contrib/blob/master/conference_notebooks/SCIPY_2019/cudf/02-Intro_to_cuDF_UDFs.ipynb)
-- [Review and Exercises 3- Linear Regression](https://github.com/rapidsai/notebooks-contrib/blob/master/conference_notebooks/SCIPY_2019/cuml/01-Introduction-LinearRegression-Hyperparam.ipynb)
 
 
-## **2. Scaling out and Starting with Algorithms: XGBoost and cuML Dimensionality Reductions and Clustering**
+## **2. Accelerating those Algorithms: cuML and XGBoost**
 ### Introduction
-Congrats learning the basics of cuDF, cuML, and Dask.  Now that you have an understanding of how to perform ETL on your data and then do some regression,  regularization, and some modelling, let's look at how further on how to increase your speed up with [XGBoost](https://machinelearningmastery.com/gentle-introduction-xgboost-applied-machine-learning/), scale it out with Dask XGboost, then see how to use cuML for Dimensionality Reduction and Clustering.
+Congrats learning the basics of cuDF and Dask.  Now let's take a look at cuML
+
+cuML lets you run many common algorithms and methods on your dataframe so that you can model, infer, regress, reduce, and predict outcomes. It's API is similar to Scikit Learn.  [Among the ever growing suite of algorithms, you can perform several GPU accelerated algortihms for each of these methods:]()*will link to slide deck showing cuML algorithms*
+
+- Classification / Regression
+- Inference
+- Clustering
+- Decomposition & Dimensionality Reduction
+- Time Series
+
+While we look at cuML , we'll take a look at how further on how to increase your speed up with [XGBoost](https://machinelearningmastery.com/gentle-introduction-xgboost-applied-machine-learning/), scale it out with Dask XGboost, then see how to use cuML for Dimensionality Reduction and Clustering.
 
 Let's look at a few video walkthroughs of XGBoost, as it may be an unfarmilar concept to some, and then expereince how to use the above in your learning notebooks.  
 
@@ -82,6 +91,7 @@ Let's look at a few video walkthroughs of XGBoost, as it may be an unfarmilar co
 
 | Notebook Title         | Description |
 |------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [06_Introduction_to_Supervised_Learning](https://github.com/rapidsai/notebooks-contrib/blob/master/getting_started_notebooks/intro_tutorials/06_Introduction_to_Supervised_Learning.ipynb)   | This notebook shows how to do GPU accelerated Supervised Learning in RAPIDS.                                                                                                                                      |
 | [07_Introduction_to_XGBoost](https://github.com/rapidsai/notebooks-contrib/blob/master/getting_started_notebooks/intro_tutorials/07_Introduction_to_XGBoost.ipynb)   | This notebook shows how to work with GPU accelerated XGBoost in RAPIDS.                                                                                                                                      |
 | [08_Introduction_to_Dask_XGBoost](https://github.com/rapidsai/notebooks-contrib/blob/master/getting_started_notebooks/intro_tutorials/08_Introduction_to_Dask_XGBoost.ipynb)   | This notebook shows how to work with Dask XGBoost in RAPIDS.                                                                                                                                      | 
 | [09_Introduction_to_Dimensionality_Reduction](https://github.com/rapidsai/notebooks-contrib/blob/master/getting_started_notebooks/intro_tutorials/09_Introduction_to_Dimensionality_Reduction.ipynb)   | This notebook shows how to do GPU accelerated Dimensionality Reduction in RAPIDS.                                                                                                                                      |
@@ -91,11 +101,13 @@ Let's look at a few video walkthroughs of XGBoost, as it may be an unfarmilar co
 ### Extra credit and Exercises
 - [10 Review of Dask XGBoost](https://rapidsai.github.io/projects/cudf/en/0.11.0/dask-xgb-10min.html)
 
-- [2- Logistic Regression](https://github.com/rapidsai/notebooks-contrib/blob/master/conference_notebooks/SCIPY_2019/cuml/02-LogisticRegression.ipynb)
+- [Review and Exercises 1 - Linear Regression](https://github.com/rapidsai/notebooks-contrib/blob/master/conference_notebooks/SCIPY_2019/cuml/01-Introduction-LinearRegression-Hyperparam.ipynb)
+
+- [Review and Exercises 2 -  Logistic Regression](https://github.com/rapidsai/notebooks-contrib/blob/master/conference_notebooks/SCIPY_2019/cuml/02-LogisticRegression.ipynb)
 
 - [3- Intro to UMAP](https://github.com/rapidsai/notebooks-contrib/blob/master/conference_notebooks/SCIPY_2019/cuml/03-UMAP.ipynb)
 
-- 
+
 ### Conclusion to Sections 1 and 2
 Here ends the basics of cuDF, cuML, Dask, and XGBoost.  These are libraries that everyone who uses RAPIDS will go to every day.  Our next sections will cover libraries that are more niche in usage, but are powerful to accomplish your analytics.  
 
