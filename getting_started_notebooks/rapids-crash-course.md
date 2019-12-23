@@ -146,28 +146,28 @@ It is often useful to look at the relationships contained in the data, which we 
 | Topic          | Notebook                                                     | Description                                                  |
 | --------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | Centrality      |                                                              |                                                              |
-|                 | [Katz](https://github.com/rapidsai/notebooks/branch-0.11/cugraph/centrality/Katz.ipynb)                                | Compute the Katz centrality for every vertex                 |
+|                 | [Katz](https://github.com/rapidsai/notebooks/blob/branch-0.11/cugraph/centrality/Katz.ipynb)                                | Compute the Katz centrality for every vertex                 |
 | Community       |                                                              |                                                              |
-|                 | [Louvain](https://github.com/rapidsai/notebooks/branch-0.11/cugraph/community/Louvain.ipynb)                           | Identify clusters in a graph using the Louvain algorithm     |
-|                 | [Spectral-Clustering](https://github.com/rapidsai/notebooks/branch-0.11/cugraph/community/Spectral-Clustering.ipynb)   | Identify clusters in a  graph using Spectral Clustering with both<br> - Balanced Cut<br> - Modularity Modularity |
-|                 | [Subgraph Extraction](https://github.com/rapidsai/notebooks/branch-0.11/cugraph/community/Sungraph-Extraction.ipynb)   | Compute a subgraph of the existing graph including only the specified vertices |
-|                 | [Triangle Counting](https://github.com/rapidsai/notebooks/branch-0.11/cugraph/community/Triangle-Counting.ipynb)       | Count the number of Triangle in a graph                      |
+|                 | [Louvain](https://github.com/rapidsai/notebooks/blob/branch-0.11/cugraph/community/Louvain.ipynb)                           | Identify clusters in a graph using the Louvain algorithm     |
+|                 | [Spectral-Clustering](https://github.com/rapidsai/notebooks/blob/branch-0.11/cugraph/community/Spectral-Clustering.ipynb)   | Identify clusters in a  graph using Spectral Clustering with both<br> - Balanced Cut<br> - Modularity Modularity |
+|                 | [Subgraph Extraction](https://github.com/rapidsai/notebooks/blob/hotfix-sssp/cugraph/community/Subgraph-Extraction.ipynb)   | Compute a subgraph of the existing graph including only the specified vertices |
+|                 | [Triangle Counting](https://github.com/rapidsai/notebooks/blob/branch-0.11/cugraph/community/Triangle-Counting.ipynb)       | Count the number of Triangle in a graph                      |
 | Components      |                                                              |                                                              |
-|                 | [Connected Components](https://github.com/rapidsai/notebooks/branch-0.11/cugraph/components/ConnectedComponents.ipynb) | Find weakly and strongly connected components in a graph     |
+|                 | [Connected Components](https://github.com/rapidsai/notebooks/blob/branch-0.11/cugraph/components/ConnectedComponents.ipynb) | Find weakly and strongly connected components in a graph     |
 | Core            |                                                              |                                                              |
-|                 | [K-Core](https://github.com/rapidsai/notebooks/branch-0.11/cugraph/cores/kcore.ipynb)                                  | Extracts the K-core cluster                                  |
-|                 | [Core Number](https://github.com/rapidsai/notebooks/branch-0.11/cugraph/cores/core-number.ipynb)                       | Computer the Core number for each vertex in a graph          |
+|                 | [K-Core](https://github.com/rapidsai/notebooks/blob/branch-0.11/cugraph/cores/kcore.ipynb)                                  | Extracts the K-core cluster                                  |
+|                 | [Core Number](https://github.com/rapidsai/notebooks/blob/branch-0.11/cugraph/cores/core-number.ipynb)                       | Computer the Core number for each vertex in a graph          |
 | Link Analysis   |                                                              |                                                              |
-|                 | [Pagerank](https://github.com/rapidsai/notebooks/branch-0.11/cugraph/link_analysis/Pagerank.ipynb)                     | Compute the PageRank of every vertex in a graph              |
+|                 | [Pagerank](https://github.com/rapidsai/notebooks/blob/branch-0.11/cugraph/link_analysis/Pagerank.ipynb)                     | Compute the PageRank of every vertex in a graph              |
 | Link Prediction |                                                              |                                                              |
-|                 | [Jacard Similarity](https://github.com/rapidsai/notebooks/branch-0.11/cugraph/link_prediction/Jaccard-Similarity.ipynb) | Compute vertex similarity score using both:<br />- Jaccard Similarity<br />- Weighted Jaccard |
-|                 | [Overlap Similarity](https://github.com/rapidsai/notebooks/branch-0.11/cugraph/link_prediction/Overlap-Similarity.ipynb) | Compute vertex similarity score using the Overlap Coefficient |
+|                 | [Jacard Similarity](https://github.com/rapidsai/notebooks/blob/hotfix-sssp/cugraph/link_prediction/Jaccard-Similarity.ipynb) | Compute vertex similarity score using both:<br />- Jaccard Similarity<br />- Weighted Jaccard |
+|                 | [Overlap Similarity](https://github.com/rapidsai/notebooks/blob/branch-0.11/cugraph/link_prediction/Overlap-Similarity.ipynb) | Compute vertex similarity score using the Overlap Coefficient |
 | Traversal       |                                                              |                                                              |
-|                 | [BFS](https://github.com/rapidsai/notebooks/branch-0.11/cugraph/traversal/BFS.ipynb)                                   | Compute the Breadth First Search path from a starting vertex to every other vertex in a graph |
-|                 | [SSSP](https://github.com/rapidsai/notebooks/branch-0.11/cugraph/traversal/SSSP.ipynb)                                 | Single Source Shortest Path  - compute the shortest path from a starting vertex to every other vertex |
+|                 | [BFS](https://github.com/rapidsai/notebooks/blob/branch-0.11/cugraph/traversal/BFS.ipynb)                                   | Compute the Breadth First Search path from a starting vertex to every other vertex in a graph |
+|                 | [SSSP](https://github.com/rapidsai/notebooks/blob/hotfix-sssp/cugraph/traversal/SSSP.ipynb)                                 | Single Source Shortest Path  - compute the shortest path from a starting vertex to every other vertex |
 | Structure       |                                                              |                                                              |
-|                 | [Renumbering](https://github.com/rapidsai/notebooks/branch-0.11/cugraph/structure/Renumber.ipynb) <br> [Renumbering 2](structure/Renumber-2.ipynb) | Renumber the vertex IDs in a graph (two sample notebooks)    |
-|                 | [Symmetrize](https://github.com/rapidsai/notebooks/branch-0.11/cugraph/structure/Symmetrize.ipynb)                     | Symmetrize the edges in a graph                              |
+|                 | [Renumbering](https://github.com/rapidsai/notebooks/blob/branch-0.11/cugraph/structure/Renumber.ipynb) <br> [Renumbering 2](structure/Renumber-2.ipynb) | Renumber the vertex IDs in a graph (two sample notebooks)    |
+|                 | [Symmetrize](https://github.com/rapidsai/notebooks/blob/branch-0.11/cugraph/structure/Symmetrize.ipynb)                     | Symmetrize the edges in a graph                              |
 
 
 ### Experiencing the Speedups
@@ -182,7 +182,7 @@ It is often useful to look at the relationships contained in the data, which we 
 
 
 
-## **Other Tutorials**
+## Bringing in Deep Learning
 ### Towards Data Science
 
 - [GPU Accelerated Data Analytics & Machine Learning](https://towardsdatascience.com/gpu-accelerated-data-analytics-machine-learning-963aebe956ce) - By Pier Paolo
