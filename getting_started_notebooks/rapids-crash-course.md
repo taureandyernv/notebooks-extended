@@ -7,7 +7,7 @@ In this Crash Course, we're going to cover the basic skills you need to accelera
 - Run modelling, inferencing, and predicting algorithms on the data in a GPU dataframe
 - Visualize your data throughout the process.  
 
-Each section should take you less than 2 hours to complete.  By the time you're done, you should be able to either:
+Each section should take you less than 2 hours to complete.  By the time you're done, you should be able to:
 1. Take an existing workflow in a data science or ML pipeline and use a RAPIDS to accelerate it with your GPU
 1. Create your own workflows from scratch
 
@@ -37,11 +37,10 @@ Let's get started with a couple videos!
 
 ### Videos
 
-- [Video- Getting Started with RAPIDS](https://www.youtube.com/watch?v=T2AU0iVbY5A).  
- Walks through the [01_Introduction_to_RAPIDS](getting_started_notebooks/intro_tutorials/01_Introduction_to_RAPIDS.ipynb) notebook which shows, at a high level, what each of the packages in RAPIDS are as well as what they do.
-- [Video - RAPIDS: Dask and cuDF NYCTaxi Screencast](https://www.youtube.com/watch?v=gV0cykgsTPM)
-
-  Shows you have you can use RAPIDS and Dask to easily ingest and model a large dataset (1 year's worth of NYCTaxi data) and then create a model around the question "when do you get the best tips".  This same workload can be done on any GPU.
+| Video Title         | Description |
+|------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [Video- Getting Started with RAPIDS](https://www.youtube.com/watch?v=T2AU0iVbY5A).  | Walks through the [01_Introduction_to_RAPIDS](getting_started_notebooks/intro_tutorials/01_Introduction_to_RAPIDS.ipynb) notebook which shows, at a high level, what each of the packages in RAPIDS are as well as what they do. |
+| [Video - RAPIDS: Dask and cuDF NYCTaxi Screencast](https://www.youtube.com/watch?v=gV0cykgsTPM) | Shows you have you can use RAPIDS and Dask to easily ingest and model a large dataset (1 year's worth of NYCTaxi data) and then create a model around the question "when do you get the best tips".  This same workload can be done on any GPU. |
 
 ### Learning Notebooks
 
@@ -53,6 +52,7 @@ If you don't have a GPU enabled system, you can try these notebooks in our [Sect
 | [02_Introduction_to_cuDF](https://github.com/rapidsai/notebooks-contrib/blob/master/getting_started_notebooks/intro_tutorials/02_Introduction_to_cuDF.ipynb)  | This notebook shows how to work with cuDF DataFrames in RAPIDS.                                                                                                                                      |
 | [03_Introduction_to_Dask](https://github.com/rapidsai/notebooks-contrib/blob/master/getting_started_notebooks/intro_tutorials/03_Introduction_to_Dask.ipynb)   | This notebook shows how to work with Dask using basic Python primitives like integers and strings.                                                                                                                                      |
 | [04_Introduction_to_Dask_using_cuDF_DataFrames](https://github.com/rapidsai/notebooks-contrib/blob/master/getting_started_notebooks/intro_tutorials/04_Introduction_to_Dask_using_cuDF_DataFrames.ipynb)   | This notebook shows how to work with cuDF DataFrames using Dask.                                                                                                                                      |
+| [Guide to UDFs](https://github.com/rapidsai/cudf/blob/branch-0.12/docs/cudf/source/guide-to-udfs.ipynb) | This notebook provides and overview of User Defined Functions with cuDF |
 
 
 
@@ -81,13 +81,11 @@ While we look at cuML , we'll take a look at how further on how to increase your
 Let's look at a few video walkthroughs of XGBoost, as it may be an unfarmilar concept to some, and then expereince how to use the above in your learning notebooks.  
 
 ### Videos
-- [Video - Introduction to XGBoost](https://www.youtube.com/watch?v=EQR3bP6XFW0)
 
- Walks through the [07_Introduction_to_XGBoost](getting_started_notebooks/intro_tutorials/07_Introduction_to_XGBoost.ipynb) notebook and shows how to work with GPU accelerated XGBoost in RAPIDS.
-
-- [Video - Introduction to Dask XGBoost](https://www.youtube.com/watch?v=q8HfEZythjM).
- 
- Walks through the [08_Introduction_to_Dask_XGBoost](getting_started_notebooks/intro_tutorials/08_Introduction_to_Dask_XGBoost.ipynb) notebook and hows how to work with Dask XGBoost in RAPIDS.  This can be run on a single GPU as well and is useful when your dataset is larger than the memory size of your GPU.
+| Video Title         | Description |
+|------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [Video - Introduction to XGBoost](https://www.youtube.com/watch?v=EQR3bP6XFW0) | Walks through the [07_Introduction_to_XGBoost](getting_started_notebooks/intro_tutorials/07_Introduction_to_XGBoost.ipynb) notebook and shows how to work with GPU accelerated XGBoost in RAPIDS. |
+| [Video - Introduction to Dask XGBoost](https://www.youtube.com/watch?v=q8HfEZythjM) |  Walks through the [08_Introduction_to_Dask_XGBoost](getting_started_notebooks/intro_tutorials/08_Introduction_to_Dask_XGBoost.ipynb) notebook and hows how to work with Dask XGBoost in RAPIDS.  This can be run on a single GPU as well and is useful when your dataset is larger than the memory size of your GPU. |
 
 ### Learning Notebooks
 
@@ -107,32 +105,12 @@ Let's look at a few video walkthroughs of XGBoost, as it may be an unfarmilar co
 
 - [Review and Exercises 2 -  Logistic Regression](https://github.com/rapidsai/notebooks-contrib/blob/master/conference_notebooks/SCIPY_2019/cuml/02-LogisticRegression.ipynb)
 
-- [3- Intro to UMAP](https://github.com/rapidsai/notebooks-contrib/blob/master/conference_notebooks/SCIPY_2019/cuml/03-UMAP.ipynb)
+- [Review and Exercises 3- Intro to UMAP](https://github.com/rapidsai/notebooks-contrib/blob/master/conference_notebooks/SCIPY_2019/cuml/03-UMAP.ipynb)
 
-### Some Examples
-| Folder    | Notebook Title         | Description                                                                                                                                                                                                                   |
-|-----------|------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| cuML      | [Coordinate Descent](https://github.com/rapidsai/notebooks/blob/master/cuml/coordinate_descent_demo.ipynb)     | This notebook includes code examples of lasso and elastic net models. These models are placed together so a comparison between the two can also be made in addition to their sklearn equivalent.                                                                                                                                                                |
-| cuML      | [DBSCAN Demo](https://github.com/rapidsai/notebooks/blob/master/cuml/dbscan_demo.ipynb)            | This notebook showcases density-based spatial clustering of applications with noise (dbscan) algorithm using the `fit` and `predict` functions                                                                              |
-| cuML      | [Forest Inference](https://github.com/rapidsai/notebooks/blob/master/cuml/forest_inference_demo.ipynb)   | This notebook shows how to use the forest inference library to load saved models and perform prediction using them. In addition, it also shows how to perform training and prediction using xgboost and lightgbm models.|
-| cuML      | [HoltWinters Demo](https://github.com/rapidsai/notebooks/blob/master/cuml/holtwinters_demo.ipynb)  | This notebook includes code example for the holt-winters algorithm and it showcases the `fit` and `forecast` functions.                 |
-| cuML      | [K-Means Demo](https://github.com/rapidsai/notebooks/blob/master/cuml/kmeans_demo.ipynb) | This notebook includes code example for the k-means algorithm and it showcases the `fit` and `predict` functions.                                                                                                                                             |
-| cuML      | [K-Means MNMG Demo](https://github.com/rapidsai/notebooks/blob/master/cuml/kmeans_demo-mnmg.ipynb) | This notebook includes code example for the k-means multi-node multi-GPU algorithm and it showcases the `fit` and `predict` functions.                                                                                                                                             |
-| cuML      | [Linear Regression Demo](https://github.com/rapidsai/notebooks/blob/master/cuml/linear_regression_demo.ipynb) | This notebook includes code example for linear regression algorithm and it showcases the `fit` and `predict` functions.                                                                                                                                             |
-| cuML      | [Metrics Demo](https://github.com/rapidsai/notebooks/blob/master/cuml/metrics_demo.ipynb) | This notebook includes code examples showcasing the different metrics provided in cuML. The results are compared with their scikit learn counterparts.                                                                                                                                             |
-| cuML      | [Mini Batch SGD Demo](https://github.com/rapidsai/notebooks/blob/master/cuml/mini_batch_sgd_demo.ipynb) | This notebook includes code example for mbsgd classifier and regressor algorithms and it showcases their `fit` and `predict` functions.                                                                                                                                             |
-| cuML      | [Nearest Neighbors_demo](https://github.com/rapidsai/notebooks/blob/master/cuml/nearest_neighbors_demo.ipynb)               | This notebook showcases k-nearest neighbors (knn) algorithm using the `fit` and `kneighbors` functions                                                                                                                          |
-| cuML      | [PCA Demo](https://github.com/rapidsai/notebooks/blob/master/cuml/pca_demo.ipynb)               | This notebook showcases principal component analysis (PCA) algorithm where the model can be used for prediction (using `fit_transform`) as well as converting the transformed data into the original dataset (using `inverse_transform`).                                                                                                                |
-| cuML      | [Random Forest Classification and Pickling](https://github.com/rapidsai/notebooks/blob/master/cuml/random_forest_demo.ipynb)   | Demonstrates how to fit cuML and scikit-learn Random Forest Classification models. Then we save the cuML model for future use with Python's pickling mechanism and demonstrate how to re-load it for prediction.|
-| cuML      | [Random Forest Multi-node / Multi-GPU](https://github.com/rapidsai/notebooks/blob/master/cuml/random_forest_mnmg_demo.ipynb)   | Demonstrates how to fit Random Forest models using multiple GPUs via Dask. |
-| cuML      | [Ridge Regression Demo](https://github.com/rapidsai/notebooks/blob/master/cuml/ridge_regression_demo.ipynb)  | This notebook includes code examples of ridge regression and it showcases the `fit` and `predict` functions.                                                                                                                                          |
-| cuML      | [SGD_Demo](https://github.com/rapidsai/notebooks/blob/master/cuml/sgd_demo.ipynb)               | The stochastic gradient descent algorithm is demonstrated in the notebook using `fit` and `predict` functions                                                                        |
-| cuML      | [SVM_Demo](https://github.com/rapidsai/notebooks/blob/master/cuml/svm_demo.ipynb)               | Binary Support Vector Machine classification is demonstrated in this notebook using `fit` and `predict` functions. |
-| cuML      | [TSNE_Demo](https://github.com/rapidsai/notebooks/blob/master/cuml/tsne_demo.ipynb)               | In this notebook, T-Distributed Stochastic Neighborhood Embedding is demonstrated applying the Barnes Hut method on the Fashion MNIST dataset using our `fit_transform` function                                                                      |
-| cuML      | [TSVD_Demo](https://github.com/rapidsai/notebooks/blob/master/cuml/tsvd_demo.ipynb	)              | This notebook showcases truncated singular value decomposition (tsvd) algorithm which like PCA performs both prediction and transformation of the converted dataset into the original data using `fit_transform` and `inverse_transform` functions respectively                                                                                                     |
-| cuML      | [UMAP_Demo](https://github.com/rapidsai/notebooks/blob/master/cuml/umap_demo.ipynb)              | The uniform manifold approximation & projection algorithm is compared with the original author's equivalent non-GPU Python implementation using `fit` and `transform` functions                       |
-| cuML      | [UMAP_Demo_Graphed](https://github.com/rapidsai/notebooks/blob/master/cuml/umap_demo_graphed.ipynb)      | Demonstration of cuML uniform manifold approximation & projection algorithm's supervised approach against mortgage dataset and comparison of results against the original author's equivalent non-GPU \Python implementation. |
-| cuML      | [UMAP_Demo_Supervised](https://github.com/rapidsai/notebooks/blob/master/cuml/umap_supervised_demo.ipynb)   | Demostration of UMAP supervised training.  Uses a set of labels to perform supervised dimensionality reduction. UMAP can also be trained on datasets with incomplete labels, by using a label of "-1" for unlabeled samples. |
+### RAPIDS cuML Example Notebooks
+- [Index of Notebooks](https://github.com/rapidsai/notebooks#cuml-notebooks)
+- [Direct Link to Notebooks](https://github.com/rapidsai/notebooks/tree/branch-0.11/cuml)
+
 
 ### Conclusion to Sections 1 and 2
 Here ends the basics of cuDF, cuML, Dask, and XGBoost.  These are libraries that everyone who uses RAPIDS will go to every day.  Our next sections will cover libraries that are more niche in usage, but are powerful to accomplish your analytics.  
@@ -143,31 +121,9 @@ It is often useful to look at the relationships contained in the data, which we 
 
 [RAPIDS' cuGraph library makes graph analytics effotless, as it boasts some of our best speedups](https://www.zdnet.com/article/nvidia-rapids-cugraph-making-graph-analysis-ubiquitous/), (up to 25,000x).  To put it in persepctive, what can take over 20 hours, cuGraph can lets you do in less than a minute (3 seconds).  In this section, we'll look at some examples of cuGraph methods for your graph analytics and look at a simple use case.
 
-| Topic          | Notebook                                                     | Description                                                  |
-| --------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| Centrality      |                                                              |                                                              |
-|                 | [Katz](https://github.com/rapidsai/notebooks/blob/branch-0.11/cugraph/centrality/Katz.ipynb)                                | Compute the Katz centrality for every vertex                 |
-| Community       |                                                              |                                                              |
-|                 | [Louvain](https://github.com/rapidsai/notebooks/blob/branch-0.11/cugraph/community/Louvain.ipynb)                           | Identify clusters in a graph using the Louvain algorithm     |
-|                 | [Spectral-Clustering](https://github.com/rapidsai/notebooks/blob/branch-0.11/cugraph/community/Spectral-Clustering.ipynb)   | Identify clusters in a  graph using Spectral Clustering with both<br> - Balanced Cut<br> - Modularity Modularity |
-|                 | [Subgraph Extraction](https://github.com/rapidsai/notebooks/blob/hotfix-sssp/cugraph/community/Subgraph-Extraction.ipynb)   | Compute a subgraph of the existing graph including only the specified vertices |
-|                 | [Triangle Counting](https://github.com/rapidsai/notebooks/blob/branch-0.11/cugraph/community/Triangle-Counting.ipynb)       | Count the number of Triangle in a graph                      |
-| Components      |                                                              |                                                              |
-|                 | [Connected Components](https://github.com/rapidsai/notebooks/blob/branch-0.11/cugraph/components/ConnectedComponents.ipynb) | Find weakly and strongly connected components in a graph     |
-| Core            |                                                              |                                                              |
-|                 | [K-Core](https://github.com/rapidsai/notebooks/blob/branch-0.11/cugraph/cores/kcore.ipynb)                                  | Extracts the K-core cluster                                  |
-|                 | [Core Number](https://github.com/rapidsai/notebooks/blob/branch-0.11/cugraph/cores/core-number.ipynb)                       | Computer the Core number for each vertex in a graph          |
-| Link Analysis   |                                                              |                                                              |
-|                 | [Pagerank](https://github.com/rapidsai/notebooks/blob/branch-0.11/cugraph/link_analysis/Pagerank.ipynb)                     | Compute the PageRank of every vertex in a graph              |
-| Link Prediction |                                                              |                                                              |
-|                 | [Jacard Similarity](https://github.com/rapidsai/notebooks/blob/hotfix-sssp/cugraph/link_prediction/Jaccard-Similarity.ipynb) | Compute vertex similarity score using both:<br />- Jaccard Similarity<br />- Weighted Jaccard |
-|                 | [Overlap Similarity](https://github.com/rapidsai/notebooks/blob/branch-0.11/cugraph/link_prediction/Overlap-Similarity.ipynb) | Compute vertex similarity score using the Overlap Coefficient |
-| Traversal       |                                                              |                                                              |
-|                 | [BFS](https://github.com/rapidsai/notebooks/blob/branch-0.11/cugraph/traversal/BFS.ipynb)                                   | Compute the Breadth First Search path from a starting vertex to every other vertex in a graph |
-|                 | [SSSP](https://github.com/rapidsai/notebooks/blob/hotfix-sssp/cugraph/traversal/SSSP.ipynb)                                 | Single Source Shortest Path  - compute the shortest path from a starting vertex to every other vertex |
-| Structure       |                                                              |                                                              |
-|                 | [Renumbering](https://github.com/rapidsai/notebooks/blob/branch-0.11/cugraph/structure/Renumber.ipynb) <br> [Renumbering 2](structure/Renumber-2.ipynb) | Renumber the vertex IDs in a graph (two sample notebooks)    |
-|                 | [Symmetrize](https://github.com/rapidsai/notebooks/blob/branch-0.11/cugraph/structure/Symmetrize.ipynb)                     | Symmetrize the edges in a graph                              |
+### RAPIDS cuML Example Notebooks
+- [Index of Notebooks](https://github.com/rapidsai/notebooks/#cugraph-notebooks)
+- [Direct Link to Notebooks](https://github.com/rapidsai/notebooks/tree/branch-0.12/cugraph)
 
 
 ### Experiencing the Speedups
@@ -181,11 +137,10 @@ It is often useful to look at the relationships contained in the data, which we 
 
 
 
+## External Tutorials:
+### Bringing in Deep Learning by "Towards Data Science"
 
-## Bringing in Deep Learning
-### Towards Data Science
-
-- [GPU Accelerated Data Analytics & Machine Learning](https://towardsdatascience.com/gpu-accelerated-data-analytics-machine-learning-963aebe956ce) - By Pier Paolo
+[GPU Accelerated Data Analytics & Machine Learning](https://towardsdatascience.com/gpu-accelerated-data-analytics-machine-learning-963aebe956ce) - By Pier Paolo
 
  - Video: https://www.youtube.com/watch?v=LztHuPh3GyU
 
@@ -194,5 +149,5 @@ It is often useful to look at the relationships contained in the data, which we 
  - [Dask notebook (Colab)](https://drive.google.com/open?id=1jrHoqh_zH7lIsWNsyfRaq0aUARkkW1s2)
 
 
-- [Deep Learning Analysis Using Large Model Support](https://towardsdatascience.com/deep-learning-analysis-using-large-model-support-3a67a919255) - By Pier Paolo
+[Deep Learning Analysis Using Large Model Support](https://towardsdatascience.com/deep-learning-analysis-using-large-model-support-3a67a919255) - By Pier Paolo
  - [Large Model Support Notebook: Keras Introduction (Colab)](https://drive.google.com/open?id=1_y81JZWOh4nWUxiY3eaO4FVpxBCB1uN1)
