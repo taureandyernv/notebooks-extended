@@ -7,7 +7,7 @@ In this Crash Course, we're going to cover the basic skills you need to accelera
 - Run modelling, inferencing, and predicting algorithms on the data in a GPU dataframe
 - Visualize your data throughout the process.  
 
-Each section should take you less than 2 hours to complete.  By the time you're done, you should be able to either:
+Each section should take you less than 2 hours to complete.  By the time you're done, you should be able to:
 1. Take an existing workflow in a data science or ML pipeline and use a RAPIDS to accelerate it with your GPU
 1. Create your own workflows from scratch
 
@@ -37,11 +37,12 @@ Let's get started with a couple videos!
 
 ### Videos
 
-- [Video- Getting Started with RAPIDS](https://www.youtube.com/watch?v=T2AU0iVbY5A).  
- Walks through the [01_Introduction_to_RAPIDS](getting_started_notebooks/intro_tutorials/01_Introduction_to_RAPIDS.ipynb) notebook which shows, at a high level, what each of the packages in RAPIDS are as well as what they do.
-- [Video - RAPIDS: Dask and cuDF NYCTaxi Screencast](https://www.youtube.com/watch?v=gV0cykgsTPM)
-
-  Shows you have you can use RAPIDS and Dask to easily ingest and model a large dataset (1 year's worth of NYCTaxi data) and then create a model around the question "when do you get the best tips".  This same workload can be done on any GPU.
+| Video Title         | Description |
+|------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [Video- Getting Started with RAPIDS](https://www.youtube.com/watch?v=T2AU0iVbY5A).  |
+Walks through the [01_Introduction_to_RAPIDS](getting_started_notebooks/intro_tutorials/01_Introduction_to_RAPIDS.ipynb) notebook which shows, at a high level, what each of the packages in RAPIDS are as well as what they do.
+| [Video - RAPIDS: Dask and cuDF NYCTaxi Screencast](https://www.youtube.com/watch?v=gV0cykgsTPM) |
+Shows you have you can use RAPIDS and Dask to easily ingest and model a large dataset (1 year's worth of NYCTaxi data) and then create a model around the question "when do you get the best tips".  This same workload can be done on any GPU.
 
 ### Learning Notebooks
 
@@ -81,13 +82,14 @@ While we look at cuML , we'll take a look at how further on how to increase your
 Let's look at a few video walkthroughs of XGBoost, as it may be an unfarmilar concept to some, and then expereince how to use the above in your learning notebooks.  
 
 ### Videos
-- [Video - Introduction to XGBoost](https://www.youtube.com/watch?v=EQR3bP6XFW0)
 
- Walks through the [07_Introduction_to_XGBoost](getting_started_notebooks/intro_tutorials/07_Introduction_to_XGBoost.ipynb) notebook and shows how to work with GPU accelerated XGBoost in RAPIDS.
+| Video Title         | Description |
+|------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [Video - Introduction to XGBoost](https://www.youtube.com/watch?v=EQR3bP6XFW0) |
+Walks through the [07_Introduction_to_XGBoost](getting_started_notebooks/intro_tutorials/07_Introduction_to_XGBoost.ipynb) notebook and shows how to work with GPU accelerated XGBoost in RAPIDS.
 
-- [Video - Introduction to Dask XGBoost](https://www.youtube.com/watch?v=q8HfEZythjM).
- 
- Walks through the [08_Introduction_to_Dask_XGBoost](getting_started_notebooks/intro_tutorials/08_Introduction_to_Dask_XGBoost.ipynb) notebook and hows how to work with Dask XGBoost in RAPIDS.  This can be run on a single GPU as well and is useful when your dataset is larger than the memory size of your GPU.
+| [Video - Introduction to Dask XGBoost](https://www.youtube.com/watch?v=q8HfEZythjM) | 
+Walks through the [08_Introduction_to_Dask_XGBoost](getting_started_notebooks/intro_tutorials/08_Introduction_to_Dask_XGBoost.ipynb) notebook and hows how to work with Dask XGBoost in RAPIDS.  This can be run on a single GPU as well and is useful when your dataset is larger than the memory size of your GPU.
 
 ### Learning Notebooks
 
