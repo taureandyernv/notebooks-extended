@@ -57,7 +57,7 @@ If you don't have a GPU enabled system, you can try these notebooks in our [Sect
 
 
 ### Extra credit and Exercises
-- [10 minute review of cuDF](https://rapidsai.github.io/projects/cudf/en/0.12.0/10min-cudf-cupy.html)
+- [10 minute review of cuDF](https://rapidsai.github.io/projects/cudf/en/0.12.0/10min.html)
 - [Extra Credit - 10 minute guide to cuDF and cuPY](https://rapidsai.github.io/projects/cudf/en/0.12.0/10min-cudf-cupy.html)
 - [Extra Credit - Multi-GPU with Dask-cuDF](https://rapidsai.github.io/projects/cudf/en/0.12.0/dask-cudf.html)
 - [Review and Exercises 1- Review of cuDF](https://github.com/rapidsai/notebooks-contrib/blob/branch-0.12/conference_notebooks/SCIPY_2019/cudf/01-Intro_to_cuDF.ipynb)
