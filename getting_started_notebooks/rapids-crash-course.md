@@ -52,13 +52,13 @@ If you don't have a GPU enabled system, you can try these notebooks in our [Sect
 | [02_Introduction_to_cuDF](https://github.com/rapidsai/notebooks-contrib/blob/branch-0.12/getting_started_notebooks/intro_tutorials/02_Introduction_to_cuDF.ipynb)  | This notebook shows how to work with cuDF DataFrames in RAPIDS.                                                                                                                                      |
 | [03_Introduction_to_Dask](https://github.com/rapidsai/notebooks-contrib/blob/branch-0.12/getting_started_notebooks/intro_tutorials/03_Introduction_to_Dask.ipynb)   | This notebook shows how to work with Dask using basic Python primitives like integers and strings.                                                                                                                                      |
 | [04_Introduction_to_Dask_using_cuDF_DataFrames](https://github.com/rapidsai/notebooks-contrib/blob/branch-0.12/getting_started_notebooks/intro_tutorials/04_Introduction_to_Dask_using_cuDF_DataFrames.ipynb)   | This notebook shows how to work with cuDF DataFrames using Dask.                                                                                                                                      |
-| [Guide to UDFs](https://github.com/rapidsai/cudf/blob/branch-0.12/docs/cudf/source/guide-to-udfs.ipynb) | This notebook provides and overview of User Defined Functions with cuDF |
+| [Guide to UDFs](https://github.com/rapidsai/cudf/blob/branch-0.16/docs/cudf/source/guide-to-udfs.ipynb) | This notebook provides and overview of User Defined Functions with cuDF |
 
 
 
 ### Extra credit and Exercises
-- [10 minute review of cuDF](https://rapidsai.github.io/projects/cudf/en/0.12.0/10min.html)
-- [Extra Credit - 10 minute guide to cuDF and cuPY](https://rapidsai.github.io/projects/cudf/en/0.12.0/10min-cudf-cupy.html)
+- [10 minute review of cuDF](https://github.com/rapidsai/cudf/blob/branch-0.16/docs/cudf/source/10min.ipynb)
+- [Extra Credit - 10 minute guide to cuDF and cuPY](https://github.com/rapidsai/cudf/blob/branch-0.16/docs/cudf/source/10min-cudf-cupy.ipynb)
 - [Extra Credit - Multi-GPU with Dask-cuDF](https://rapidsai.github.io/projects/cudf/en/0.12.0/dask-cudf.html)
 - [Review and Exercises 1- Review of cuDF](https://github.com/rapidsai/notebooks-contrib/blob/branch-0.12/conference_notebooks/SCIPY_2019/cudf/01-Intro_to_cuDF.ipynb)
 - [Review and Exercises 2- Creating User Defined Fuctions (UDFs) in cuDF](https://github.com/rapidsai/notebooks-contrib/blob/branch-0.12/conference_notebooks/SCIPY_2019/cudf/02-Intro_to_cuDF_UDFs.ipynb)
@@ -99,7 +99,7 @@ Let's look at a few video walkthroughs of XGBoost, as it may be an unfarmilar co
 
 
 ### Extra credit and Exercises
-- [10 Review of Dask XGBoost](https://rapidsai.github.io/projects/cudf/en/0.12.0/dask-xgb-10min.html)
+- [10 Review of cuML Estimators](https://github.com/rapidsai/cuml/blob/branch-0.16/docs/source/estimator_intro.ipynb)
 
 - [Review and Exercises 1 - Linear Regression](https://github.com/rapidsai/notebooks-contrib/blob/branch-0.12/conference_notebooks/SCIPY_2019/cuml/01-Introduction-LinearRegression-Hyperparam.ipynb)
 
